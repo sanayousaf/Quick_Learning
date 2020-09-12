@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frontBackground"
+    tools:context=".MainActivity">
+
+
+    <com.stepstone.stepper.StepperLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/StepperLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:ms_activeStepColor="@color/ms_white_54_opacity"
+        app:ms_backButtonText=" "
+        app:ms_bottomNavigationBackground="@color/ms_black_38_opacity"
+        app:ms_nextButtonText=" "
+        app:ms_stepperType="dots">
+
+    </com.stepstone.stepper.StepperLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/login"
+        style="@style/textStyle"
+        android:layout_marginLeft="32dp"
+        android:text="Log in"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@id/StepperLayout"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        style="@style/textStyle"
+        android:id="@+id/signUp"
+        android:layout_marginRight="32dp"
+        android:gravity="right"
+        android:text="Sign up"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/StepperLayout"
+        />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
